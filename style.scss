@@ -1,0 +1,68 @@
+$primaryHtmlColor: #E44D26;
+$secondaryHtmlColor: #F16529;
+$primaryCssColor: #264DE4;
+$secondaryCssColor: #2965F1;
+$primaryJsColor: #E5A228;
+$secondaryJsColor: #F1BF26;
+$fontDefaultColor: #000000;
+$backgroundDefaultColor: #FFFFFF;
+
+$gradienteHTML: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
+$gradienteCSS: linear-gradient(90deg, rgba(38, 77, 228, 0.8) 0%, rgba(41, 101, 241, 0.8) 100%);
+$gradienteJS: linear-gradient(90deg, rgba(229, 162, 40, 0.8) 0%, rgba(241, 191, 38, 0.8) 100%);
+$gradienteLinks: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+
+body{
+    height: 100vh;
+}
+
+.container-header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.container-header img{
+    width: 20;
+}
+
+
+@media (min-width: 578px) and (orientation: landscape){
+
+}
+
+@media (min-width: 578px) and (orientation: portrait){
+
+}
+
+@media (min-width: 768px) {
+    body{
+        background-color: red;
+
+    }
+}
+
+@media (min-width: 992px){
+    body{
+        background-color: red;
+
+    }
+}
+
+@media (min-width: 1200px){
+    body{
+        background-color: red;
+    }
+}

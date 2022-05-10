@@ -54,6 +54,10 @@ body{
     display: none;
 }
 
+a{
+    color: white;
+}
+
 //Main section
 main{
     height: 75vh;
@@ -123,6 +127,7 @@ section .container-texts{
     align-items: center;
     flex-direction: column;
     padding: 0 20px;
+    font-size: 1.4rem;
 }
 
 section .container-texts h2{
@@ -156,6 +161,7 @@ section .button{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 30px;;
 
 }
 
@@ -178,6 +184,7 @@ section .button{
 //section links
 .section-links{
     background: $gradienteLinks;
+    
 }
 
 .section-links h2{
@@ -191,6 +198,7 @@ section .button{
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 
 }
@@ -355,7 +363,7 @@ footer span{
     .section-links .container-links{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         width: 100vw;
     }

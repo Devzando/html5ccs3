@@ -48,6 +48,10 @@ body {
   display: none;
 }
 
+a {
+  color: white;
+}
+
 main {
   height: 75vh;
   display: -webkit-box;
@@ -140,6 +144,7 @@ section .container-texts {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 20px;
+  font-size: 1.4rem;
 }
 
 section .container-texts h2 {
@@ -179,6 +184,7 @@ section .button {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-top: 30px;
 }
 
 .section-html {
@@ -215,6 +221,7 @@ section .button {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -439,9 +446,9 @@ footer span {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

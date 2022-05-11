@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +7,7 @@
   list-style: none;
   outline: none;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -48,6 +50,11 @@ body {
   display: none;
 }
 
+.menu-icon {
+  width: 50px;
+  height: 50px;
+}
+
 a {
   color: white;
 }
@@ -68,6 +75,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 200vw;
+  overflow: hidden;
 }
 
 main h1, h2 {
@@ -113,6 +121,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 section .container-img {
@@ -338,6 +347,9 @@ footer span {
             flex-direction: column;
     height: 85vh;
   }
+  .section-links h2 {
+    margin-top: 50px;
+  }
   .section-links .container-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -346,9 +358,9 @@ footer span {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -419,11 +431,17 @@ footer span {
     height: 75vh;
   }
   section .container-img img {
-    width: 180px;
-    height: 180px;
+    width: 260px;
+    height: 260px;
   }
   section .container-texts {
     font-size: 2rem;
+  }
+  section .container-texts h3 {
+    font-size: 1.4rem;
+  }
+  section .container-texts p {
+    font-size: 1.2rem;
   }
   .section-css {
     -webkit-box-orient: horizontal;
@@ -437,6 +455,9 @@ footer span {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 85vh;
+  }
+  .section-links h2 {
+    margin-top: 60px;
   }
   .section-links .container-links {
     display: -webkit-box;
@@ -486,5 +507,79 @@ footer span {
   .container-header div img {
     width: 180px;
   }
+}
+
+section img {
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+.button {
+  -webkit-animation: btn-animation 1.2s ease infinite;
+          animation: btn-animation 1.2s ease infinite;
+}
+
+header nav ol li {
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s;
+}
+
+header nav ol li a {
+  -webkit-transition: color 1.2s;
+  transition: color 1.2s;
+}
+
+header nav ol li a:hover {
+  color: #264DE4;
+}
+
+header nav ol li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@-webkit-keyframes btn-animation {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: .6;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes btn-animation {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: .6;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+section img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */

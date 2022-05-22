@@ -1,3 +1,6 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 //cores
 $primaryHtmlColor: #E44D26;
 $secondaryHtmlColor: #F16529;
@@ -23,6 +26,7 @@ $gradienteLinks: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
     list-style: none;
     outline: none;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     height: 100vh;
@@ -54,6 +58,15 @@ body{
     display: none;
 }
 
+.menu-icon{
+    width: 50px;
+    height: 50px;
+}
+
+a{
+    color: white;
+}
+
 //Main section
 main{
     height: 75vh;
@@ -64,6 +77,7 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 200vw;
+    overflow: hidden;
 }
 
 main h1, h2{
@@ -103,6 +117,7 @@ section{
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 section .container-img{
@@ -123,6 +138,7 @@ section .container-texts{
     align-items: center;
     flex-direction: column;
     padding: 0 20px;
+    font-size: 1.4rem;
 }
 
 section .container-texts h2{
@@ -156,6 +172,7 @@ section .button{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 30px;;
 
 }
 
@@ -178,6 +195,7 @@ section .button{
 //section links
 .section-links{
     background: $gradienteLinks;
+    
 }
 
 .section-links h2{
@@ -191,6 +209,7 @@ section .button{
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 
 }
@@ -274,10 +293,14 @@ footer span{
         height: 85vh;
     }
 
+    .section-links h2{
+        margin-top: 50px;
+    }
+
     .section-links .container-links{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         width: 100vw;
     }
@@ -334,12 +357,20 @@ footer span{
     }
 
     section .container-img img{
-        width: 180px;
-        height: 180px;
+        width: 260px;
+        height: 260px;
     }
 
     section .container-texts{
         font-size: 2rem;
+    }
+
+    section .container-texts h3{
+        font-size: 1.4rem;
+    }
+
+    section .container-texts p{
+        font-size: 1.2rem;
     }
 
     .section-css{
@@ -352,10 +383,14 @@ footer span{
         height: 85vh;
     }
 
+    .section-links h2{
+        margin-top: 60px;
+    }
+
     .section-links .container-links{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         width: 100vw;
     }
@@ -384,4 +419,50 @@ footer span{
     .container-header div img{
         width: 180px;
     }
+}
+
+//Animações
+section img{
+    transition: transform 1.5s;
+}
+
+.button{
+    animation: btn-animation 1.2s ease infinite;
+}
+
+header nav ol li{
+    transition: transform 1.2s;
+}
+
+header nav ol li a{
+    transition: color 1.2s;
+}
+
+header nav ol li a:hover{
+    color: $primaryCssColor;
+}
+
+header nav ol li:hover{
+    transform: scale(1.1);
+}
+
+@keyframes btn-animation{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50%{
+        opacity: .6;
+        transform: scale(1.1);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+section img:hover{
+    transform: scale(1.2);
 }
